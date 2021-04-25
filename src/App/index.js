@@ -6,11 +6,11 @@ import './App.scss';
 import getLyrics from '../helpers/data/lyricData';
 
 function App() {
+  const [showLyrics, setShowLyrics] = useState('');
   const [lyricObject, setLyricObject] = useState({
     artist: '',
     title: ''
   });
-  const [showLyrics, setShowLyrics] = useState('');
   const [showArtistTitle, setShowArtistTitle] = useState({
     artist: '',
     title: ''
@@ -35,14 +35,12 @@ function App() {
     lyricTime();
   };
 
-  console.warn(showLyrics);
-
   const handleLyricObject = (e) => {
     setLyricObject({ ...lyricObject, [e.target.id]: e.target.value });
   };
 
   return (
-    <div className="App">
+    <div>
       <Form className="form" onSubmit={handleSubmit}>
         <FormGroup id="formGroup">
           <Label for="artist">Artist</Label>
@@ -66,9 +64,12 @@ function App() {
       </Form>
       <div>
         <h2 id="artistInfo">
-          {showArtistTitle.title} by {showArtistTitle.artist}
+          {showArtistTitle.title}
+          <br></br>
+          {showArtistTitle.artist}
         </h2>
-        <p className="requested-lyrics">{showLyrics}</p>
+        <hr></hr>
+        <p id="contentContainer">{showLyrics}</p>
       </div>
     </div>
   );
