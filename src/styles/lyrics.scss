@@ -2,11 +2,17 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Lato&display=swap');
 
-body {
-background: #0a4457 !important;
-margin-top: 100px;
+#artistInfo {
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: white;
+  margin: 30px;
 }
 
-code {
+#contentContainer {
+  white-space: pre-line;
   font-family: 'Lora', serif;
+  color: white;
+  text-align: center;
+  margin: 30px;
 }

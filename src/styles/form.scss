@@ -1,0 +1,27 @@
+@import 'variables';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Lato&display=swap');
+
+.form {
+  background-color: white;
+  width: 40rem;
+  margin: auto;
+  font-family: 'Lora', serif;
+  border-radius: 50px;
+  padding: 30px;
+}
+
+#formGroup {
+  margin: auto;
+  padding: 10px;
+  width: 30rem;
+}
+
+#artist-label {
+  margin-top: 25px;
+}
+
+Button {
+  margin-top: 30px;
+  margin-left: 55px;
+}

@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import {
   Button, Form, FormGroup, Label, Input
 } from 'reactstrap';
-import './App.scss';
+import '../styles/form.scss';
+import '../styles/lyrics.scss';
+import '../styles/index.scss';
+
 import getLyrics from '../helpers/data/lyricData';
 
 function App() {
@@ -40,7 +43,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="App">
       <Form className="form" onSubmit={handleSubmit}>
         <FormGroup id="formGroup">
           <Label for="artist">Artist</Label>
