@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import {
   Button, Form, FormGroup, Label, Input
 } from 'reactstrap';
-import '../styles/form.scss';
-import '../styles/lyrics.scss';
-import '../styles/index.scss';
-
 import getLyrics from '../helpers/data/lyricData';
+import '../styles/index.scss';
 
 function App() {
   const [showLyrics, setShowLyrics] = useState('');
